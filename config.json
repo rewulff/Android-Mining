@@ -1,18 +1,17 @@
 {
-	"pools":[
-	{
-		"name": "de.vipor.net",
-        	"url": "stratum+ssl://de.vipor.net:5140",
-		"timeout": 150,
-		"disabled": 0
-	},
-	],
-	
-	"user": "RS2BpUeHSFJrxBxQN7Tm9YkKSFtyBTMBfA",
-	"algo": "verus",
-	"threads": 7,
-	"cpu-priority": 1,
-	"retry-pause": 5,
-	"api-allow": "10.0.0.0/16",
-	"api-bind": "0.0.0.0:4068"
+   "algo": "verus",
+   "api-allow": "10.0.0.0/16",
+   "api-bind": "0.0.0.0:4068",
+   "cpu-priority": 1,
+   "pools": [
+      {
+         "disabled": 0,
+         "name": "de.vipor.net",
+         "timeout": 150,
+         "url": "stratum+ssl://de.vipor.net:5140"
+      }
+   ],
+   "retry-pause": 5,
+   "threads": 7,
+   "user": "RS2BpUeHSFJrxBxQN7Tm9YkKSFtyBTMBfA"
 }
